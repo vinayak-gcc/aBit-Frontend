@@ -1,8 +1,6 @@
 import { IoWallet } from "react-icons/io5";
 import { CiBellOn } from "react-icons/ci";
-import { CgProfile } from "react-icons/cg";
 import { IoIosArrowDown } from "react-icons/io";
-import img1  from './Img/illust_3084939_20211225_095452.jpg'
 import { FaPlus } from "react-icons/fa6";
 import img2 from './Img/unsplash_E8Ufcyxz514.jpg'
 import img3 from './Img/cover image.jpg'
@@ -147,10 +145,10 @@ function App() {
       {/* Releases */}
       
       {/* Add Squares */}
-      <div className=" mx-0 w-1/2 my-6 flex flex-col space-y-6 md:flex-row md:mx-12">
+      <div className=" mx-0 w-1/2 my-6 flex flex-col gap-4 space-y-6 md:flex-row md:mx-12">
       
       {/* First Square */}
-      <div className=" bg-gray-200 flex flex-col items-center mt-7 mb-2 mx-1 justify-center rounded-3xl h-[54vh] w-[54vh] min-h-12">
+      <div className=" bg-gray-200 flex flex-col items-center mt-7 mb-2 mx-1 justify-center rounded-3xl h-[52vh] w-[50vh] min-h-12">
         <div className="flex flex-col text-center text-3xl justify-center mx-4 text-gray-400 ">
         <FaPlus/>
         </div>
@@ -161,7 +159,7 @@ function App() {
       {/* First Square */}
       
       {/* Second Square */}
-      <div className="  bg-gray-200 flex align-middle md:h-[54vh] w-[54vh] ">
+      <div className=" bg-gray-200 flex align-middle md:h-[54vh] w-[54vh] ">
         <p className="font-semibold text-lg absolute ml-6 mt-4 text-white">The Sound of Silence</p>
         
         {/* Shares,Offered,Raised */}
