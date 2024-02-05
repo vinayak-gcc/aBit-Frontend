@@ -11,15 +11,15 @@ function App() {
 
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* Start */}
-
+      
         {/* Absolute Square */}
-        <div className="hidden sm:flex absolute border-2 mt-96 ml-0 border-black sm:ml-16 ">
+        <div className="relative mt-8 sm:flex sm:absolute border-2 sm:mt-96 ml-0 border-black sm:ml-16 ">
           
           {/* Img */}
           <div className=" ">
-            <img className="w-[34vh] h-full" src={img4} alt='2'/>
+            <img className="w-full h-[36vh] sm:w-[34vh] sm:h-full" src={img4} alt='2'/>
           </div>
           {/* Img */}
 
@@ -28,7 +28,7 @@ function App() {
 
               <div className="flex my-3 mx-6 ">
               <p className="text-2xl font-semibold">DAN MACE</p>
-              <p className="text-center ml-6">/Johny_Films/</p>
+              <p className="text-center ml-6 mt-1">/Johny_Films/</p>
               </div>
 
               <div className="mx-6">
@@ -40,8 +40,11 @@ function App() {
               </div>
 
               <div className="flex mx-6 my-6">
-                <div className="w-1/2"><p className="flex justify-center items-center border-2 border-black">Creator</p></div>
-                <div className="w-1/2 border-2 border-black bg-zinc-600"></div>
+                <div className="w-1/2">
+                  <p className="flex justify-center items-center border-2  border-gray-800">
+                  Creator</p>
+                </div>
+                <div className="w-1/2 border-2 border-gray-800 border-l-none bg-zinc-600"></div>
               </div>
 
           </div>
@@ -50,7 +53,7 @@ function App() {
         </div>
         {/*Absolute  Square */}
 
-        <div className="">
+        <div className="overflow-x-hidden">
 
         {/* Navbar */}
         <div className="flex flex-col md:flex-row m-0">
@@ -58,14 +61,15 @@ function App() {
           {/* Navbar 1*/}
           <div className="w-1/5">
             <div className="text-center ml-6">
-              <p className="text-gray-700  text-2xl flex items-center ml-20 my-4 font-semibold sm:ml-16  ">aBit
+              <p className="text-gray-700 mt-5 text-2xl flex items-center ml-32 my-4 font-semibold sm:ml-20 ">
+                aBit
               </p>
             </div>
           </div>
           {/* Navbar 1 */}
 
           {/* Navbar part-2 */}
-          <div className=' flex justify-start mx-0 md:space-x-4 md:mx-8 sm:w-4/5 sm:justify-end'>
+          <div className=' flex justify-start mx-8 md:space-x-4  sm:w-4/5 sm:justify-end'>
           {/* Button */}
           <div>
             <button className="p-2 font-semibold rounded-2xl border-2 border-purple-500 text-purple-800 mx-2 md:mx-0 my-4">Share New Video</button>
@@ -103,25 +107,25 @@ function App() {
         
         {/* John Info */}
         <div className=" w-full flex items-center space-y-4 bg-zinc-800 text-white ">
-          <p className=" my-7 text-2xl italic text-gray-300 " style={{fontFamily:'Gloria Hallelujah', }}>
+          <p className=" my-7 mx-4 text-2xl italic yext-center text-gray-300 " style={{fontFamily:'Gloria Hallelujah', }}>
            n Bill / Creator / Moved to NYC / 27.11.22 / Live Now / John Bill /  Creator  /  Moved to NYC  /  27.11.22  /  Live Now  /  John Bill  
             </p>
         </div>
         {/* John Info */}
 
       {/* Releases */}
-      <div className="flex flex-col mx-12  sm:flex-row sm:mt-10">
+      <div className="flex flex-col overflow-x-hidden mx-12  sm:flex-row sm:mt-10">
         
-        <div className="w-3/5 flex flex-col mt-24 ml-3">
+        <div className="w-2/3 flex flex-col mt-24 ml-3">
           <p className="text-xl my-4">Releases</p>
           <p className="text-gray-400 font-sans">Videos that you upload in collaboration with aBit appear here.</p>
         </div>
 
-        <div className="w-2/5 flex flex-col md:flex-row mt-20">
+        <div className="w-1/3 flex flex-col md:flex-row mt-20">
          
-          <div className="grid p-2 space-y-4 my-2 grid-rows-4 sm:grid-cols-4">
+          <div className="grid p-2 space-y-8 my-2 grid-4 sm:grid-cols-4">
             <div className="flex flex-col  border-l-2 border-gray-100">
-              <p className="font-bold ml-3 mt-4">1 </p>
+              <p className="font-bold ml-3 mt-8">1 </p>
                <p className="text-gray-400 ml-3 "> Shared <br/> Videos
                </p>
               </div>
@@ -145,11 +149,11 @@ function App() {
       {/* Releases */}
       
       {/* Add Squares */}
-      <div className=" mx-0 w-1/2 my-6 flex flex-col gap-4 space-y-6 md:flex-row md:mx-12">
+      <div className=" mx-3 w-1/2 my-6 flex flex-col gap-4 space-y-6 md:flex-row md:mx-12">
       
       {/* First Square */}
       <div className=" bg-gray-200 flex flex-col items-center mt-7 mb-2 mx-1 justify-center rounded-3xl h-[52vh] w-[50vh] min-h-12">
-        <div className="flex flex-col text-center text-3xl justify-center mx-4 text-gray-400 ">
+        <div className="flex flex-col text-center mt-28 text-3xl justify-center mx-4 text-gray-400 ">
         <FaPlus/>
         </div>
         <div className="flex justify-center text-center mt-12 mx-4 mb-4">
@@ -159,8 +163,8 @@ function App() {
       {/* First Square */}
       
       {/* Second Square */}
-      <div className=" bg-gray-200 flex align-middle md:h-[54vh] w-[54vh] ">
-        <p className="font-semibold text-lg absolute ml-6 mt-4 text-white">The Sound of Silence</p>
+      <div className=" bg-gray-200 mx-0 flex align-middle md:h-[54vh] w-[52vh] ">
+        <p className="font-semibold text-lg absolute ml-8 mt-4 text-white">The Sound of Silence</p>
         
         {/* Shares,Offered,Raised */}
         <div className=" absolute rounded-lg mx-10 w-[17vw] h-[4vw] flex mt-60 justify-end text-center flex-col " style={{backgroundColor:'rgba(255, 255, 255, 0.2)',}}>
@@ -186,10 +190,10 @@ function App() {
       {/* About Page */}
       <div className="mx-20 mt-120 flex flex-col mb-20 gap-y-4 md:flex-row md:gap-y-0 sm:mt-20">
 
-      <div className="w-4/5 mt-6">
+      <div className="w-4/5 mt-10">
         <div className="flex flex-col">
           <p className="text-3xl font-semibold ">aBit</p>
-          <p className="mt-2">  Changing the way in which <br/> creators and fans interact.</p>
+          <p className="mt-6">  Changing the way in which <br/> creators and fans interact.</p>
         </div>
       </div>
       <div className="w-1/5 border-l-2 flex flex-col border-gray-300 md:flex-row ">
@@ -205,7 +209,8 @@ function App() {
 
       </div>
       {/* End */}
-    </>
+
+    </div>
   )
 }
 
